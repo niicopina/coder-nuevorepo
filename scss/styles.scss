@@ -1,6 +1,175 @@
 @import "bootstrap/bootstrap.scss";
 
-div {
-    background-color: red($color: #000000);
+.containter {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-auto-columns: minmax(400px, auto)
+}
+
+.item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    font-size: 60px;
+    font: bold;
+    
+}
+
+.iniciomenu:hover {
+    transform: scale(1.5);
+}
+
+.item1 {
+    background-color: aqua;
+    background: url(https://www.trecebits.com/wp-content/uploads/2020/05/code-5113374_1920-1-800x445.jpg);
+    background-size: 300%;
+    
+}
+.item2 {
+    background: url(https://cdn4.vectorstock.com/i/1000x1000/40/03/music-equaliser-frequency-graph-vector-17714003.jpg);
+    background-size: 280%;
+}
+.item3 {
+    background: url(../img/saltando.jpg);
+    background-size: 200%;
+    background-position: 15rem;
+}
+body {
+    font-family: 'Gemunu Libre', sans-serif;
+    background: url(https://www.wallpaperup.com/uploads/wallpapers/2012/08/04/8032/b7fe125c4788ce56f4e3f277c8f40dcb.jpg);
+
+}
+
+h1 {
+    font-size: 4.5rem;
+    background-color: rgb(53, 64, 73);
+    margin: 60px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.containter {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-auto-columns: minmax(400px, auto)
+}
+
+.item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    font-size: 60px;
+    font: bold;
+    
+}
+
+.iniciomenu:hover {
+    transform: scale(1.5);
+}
+
+.item1 {
+    background-color: aqua;
+    background: url(https://www.trecebits.com/wp-content/uploads/2020/05/code-5113374_1920-1-800x445.jpg);
+    background-size: 300%;
+    
+}
+.item2 {
+    background: url(https://cdn4.vectorstock.com/i/1000x1000/40/03/music-equaliser-frequency-graph-vector-17714003.jpg);
+    background-size: 280%;
+}
+.item3 {
+    background: url(../img/saltando.jpg);
+    background-size: 200%;
+    background-position: 15rem;
+}
+.bodyprojects {
+    background: url(https://www.wallpaperup.com/uploads/wallpapers/2012/08/04/8032/b7fe125c4788ce56f4e3f277c8f40dcb.jpg);
+}
+.form {
+    margin: 50px;
+    padding: 20px;
+    color: azure;
+    font-size: x-large;
+}
+
+.people {
+    background-color: black;
+    margin: 20px;
+}
+
+.table {
+    background-color: aliceblue;
+    margin: 50px;
+}
+
+#mainfooter {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+footer {
+    div {
+    display: flex;
+    align-items: center;
+}
+    ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0, 8px;
+    align-items: center;
+    justify-content: center;
+    li {
+        list-style: none;
+        text-decoration: none;
+    }
+}
+}
