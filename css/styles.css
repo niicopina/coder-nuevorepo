@@ -7302,3 +7302,11 @@ footer ul {
   footer ul li {
     list-style: none;
     text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    justify-content: start; }
+  .wrapper {
+    display: flex;
+    flex-direction: column; } }
