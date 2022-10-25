@@ -7202,6 +7202,15 @@ body {
   body h1, body .h1, body h2, body .h2 {
     margin-bottom: 15px; }
 
+.estructura-about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 380px;
+  grid-auto-columns: minmax(400px, auto); }
+  .estructura-about .about p {
+    font-size: 1.5rem;
+    color: azure; }
+
 .iniciomenu:hover {
   transform: scale(1.5); }
 
@@ -7228,6 +7237,21 @@ footer {
   footer li {
     list-style: none;
     text-decoration: none; }
+
+@media screen and (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    justify-content: start; }
+  .wrapper {
+    display: flex;
+    flex-direction: column; }
+  .estructura-about {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
+    .estructura-about .about {
+      flex-direction: column;
+      justify-content: start; } }
 
 img {
   max-width: 100%; }
@@ -7256,11 +7280,3 @@ a {
 .table {
   background-color: aliceblue;
   margin: 50px; }
-
-@media screen and (max-width: 768px) {
-  .item {
-    flex-direction: column;
-    justify-content: start; }
-  .wrapper {
-    display: flex;
-    flex-direction: column; } }

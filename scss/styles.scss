@@ -2,6 +2,7 @@
 @import "estructura";
 @import "animaciones";
 @import "footer";
+@import "responsive";
 
 img {
     max-width: 100%;
@@ -38,17 +39,3 @@ a {
     margin: 50px;
 }
 
-
-@media screen and (max-width: 768px) {
-    .item {
-        
-        flex-direction: column;
-        justify-content:start;
-
-    }
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        
-    }
-}
