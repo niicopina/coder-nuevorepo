@@ -2,11 +2,11 @@
 @import "estructura";
 @import "animaciones";
 @import "footer";
-@import "responsive";
 
-@mixin marcos {
+@mixin marcos ($fondo) {
     margin: 50px;
     padding: 20px;
+    background-color: $fondo;
 }
 
 img {
@@ -28,18 +28,41 @@ a {
     background: url(https://www.wallpaperup.com/uploads/wallpapers/2012/08/04/8032/b7fe125c4788ce56f4e3f277c8f40dcb.jpg);
 }
 .form {
-    @include marcos;
+    @include marcos(#111);
     color: azure;
     font-size: x-large;
 }
 
 .people {
-    background-color: black;
-    margin: 20px;
+    @include marcos(#333)
 }
 
 .table {
     background-color: aliceblue;
-    @include marcos;
+    @include marcos(#222);
 }
 
+// media screen pag Home
+@media screen and (max-width: 768px) {
+    .item {
+        
+        flex-direction: column;
+        justify-content:start;
+
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .estructura-about {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .about {
+            flex-direction: column;
+            justify-content:start;
+        }
+
+    }
+}

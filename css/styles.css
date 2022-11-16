@@ -7238,21 +7238,6 @@ footer {
     list-style: none;
     text-decoration: none; }
 
-@media screen and (max-width: 768px) {
-  .item {
-    flex-direction: column;
-    justify-content: start; }
-  .wrapper {
-    display: flex;
-    flex-direction: column; }
-  .estructura-about {
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-    .estructura-about .about {
-      flex-direction: column;
-      justify-content: start; } }
-
 img {
   max-width: 100%; }
 
@@ -7270,14 +7255,32 @@ a {
 .form {
   margin: 50px;
   padding: 20px;
+  background-color: #111;
   color: azure;
   font-size: x-large; }
 
 .people {
-  background-color: black;
-  margin: 20px; }
+  margin: 50px;
+  padding: 20px;
+  background-color: #333; }
 
 .table {
   background-color: aliceblue;
   margin: 50px;
-  padding: 20px; }
+  padding: 20px;
+  background-color: #222; }
+
+@media screen and (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    justify-content: start; }
+  .wrapper {
+    display: flex;
+    flex-direction: column; }
+  .estructura-about {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
+    .estructura-about .about {
+      flex-direction: column;
+      justify-content: start; } }
