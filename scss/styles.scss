@@ -3,44 +3,13 @@
 @import "animaciones";
 @import "footer";
 
-@mixin marcos ($fondo) {
+/* @mixin marcos ($fondo) {
     margin: 50px;
     padding: 20px;
     background-color: $fondo;
-}
-
-img {
-    max-width: 100%;
-}
-
-p {
-    font-size: 1rem;
-    margin: 10px 0;
-    line-height: 1.7rem;
-}
-
-a {
-    text-decoration: none;
-}
+} */
 
 
-.bodyprojects {
-    background: url(https://www.wallpaperup.com/uploads/wallpapers/2012/08/04/8032/b7fe125c4788ce56f4e3f277c8f40dcb.jpg);
-}
-.form {
-    @include marcos(#111);
-    color: azure;
-    font-size: x-large;
-}
-
-.people {
-    @include marcos(#333)
-}
-
-.table {
-    background-color: aliceblue;
-    @include marcos(#222);
-}
 
 // media screen pag Home
 @media screen and (max-width: 768px) {
