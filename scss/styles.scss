@@ -34,4 +34,16 @@
         }
 
     }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 30px;
+        padding: 10px;
+        color: azure;
+        font-size: x-large;
+        .text-area {
+                
+            }
+    }
 }
