@@ -7235,7 +7235,6 @@ h4, .h4 {
   width: 18%; }
 
 .proyectos {
-  background: #101010;
   width: 100%;
   padding: 100px 0px; }
 
@@ -7353,24 +7352,34 @@ footer p:nth-child(2) {
     background-color: $fondo;
 } */
 @media screen and (max-width: 768px) {
-  .item {
-    flex-direction: column;
-    justify-content: start; }
-  .wrapper {
-    display: flex;
-    flex-direction: column; }
+  .body {
+    min-height: 100vh; }
   .estructura-about {
     display: flex;
-    flex-direction: column;
-    gap: 50px; }
+    flex-direction: column; }
     .estructura-about .about {
-      flex-direction: column;
-      justify-content: start; }
-  .contact-form {
+      background-image: url(../img/paradop.jpg);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: repeat; }
+      .estructura-about .about p {
+        font-size: 1.5rem;
+        color: black; }
+  .proyectos {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 30px;
-    padding: 10px;
-    color: azure;
-    font-size: x-large; } }
+    flex-direction: column; }
+    .proyectos .titulo-proyecto h2, .proyectos .titulo-proyecto .h2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: left; }
+    .proyectos .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(../img/paradop.jpg);
+      background-size: 100%;
+      background-position: center; }
+      .proyectos .box .card2 {
+        height: 300px; }
+  footer {
+    margin-top: 200vh; } }

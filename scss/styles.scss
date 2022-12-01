@@ -13,37 +13,52 @@
 
 // media screen pag Home
 @media screen and (max-width: 768px) {
-    .item {
-        
-        flex-direction: column;
-        justify-content:start;
-
-    }
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        
-    }
+    .body {
+        min-height: 100vh;
+        }
     .estructura-about {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        
         .about {
-            flex-direction: column;
-            justify-content:start;
+            background-image: url(../img/paradop.jpg);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: repeat;
+            p {
+                font-size: 1.5rem;
+                color: rgb(0, 0, 0);
+                }
+            }
         }
-
-    }
-    .contact-form {
+    .proyectos {
+        
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        margin: 30px;
-        padding: 10px;
-        color: azure;
-        font-size: x-large;
-        .text-area {
-                
+        
+        
+        .titulo-proyecto{
+            h2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                }
             }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(../img/paradop.jpg);
+            background-size: 100%;
+            background-position: center;
+            .card2 {
+                height: 300px;
+
+                }
+            }
+        }
+    footer {
+        margin-top: 200vh;
+        
+        }
     }
-}
