@@ -63,7 +63,14 @@
                 }
             }
         }
-    .footer-project {
+        .frames {
+            display: flex;
+            flex-direction: column;
+            .youtube {
+                width: 250px;
+            }
+        }
+        .footer-project {
         position: absolute;
         width: 100%;
         height: 300px;

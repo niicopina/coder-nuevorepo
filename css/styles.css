@@ -7384,6 +7384,11 @@ footer p:nth-child(2) {
       background-position: center; }
       .proyectos .box .card2 {
         height: 300px; }
+  .frames {
+    display: flex;
+    flex-direction: column; }
+    .frames .youtube {
+      width: 250px; }
   .footer-project {
     position: absolute;
     width: 100%;
