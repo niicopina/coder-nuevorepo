@@ -7353,7 +7353,9 @@ footer p:nth-child(2) {
 } */
 @media screen and (max-width: 768px) {
   .body {
-    min-height: 100vh; }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; }
   .estructura-about {
     display: flex;
     flex-direction: column; }
@@ -7367,7 +7369,8 @@ footer p:nth-child(2) {
         color: black; }
   .proyectos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    min-height: 100vh; }
     .proyectos .titulo-proyecto h2, .proyectos .titulo-proyecto .h2 {
       display: flex;
       flex-direction: row;
@@ -7381,5 +7384,14 @@ footer p:nth-child(2) {
       background-position: center; }
       .proyectos .box .card2 {
         height: 300px; }
-  footer {
-    margin-top: 200vh; } }
+  .footer-project {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: #789fb1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin-top: 650px; } }
